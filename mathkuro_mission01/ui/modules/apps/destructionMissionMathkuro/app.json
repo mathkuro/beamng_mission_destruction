@@ -1,0 +1,15 @@
+{
+  "name" : "UI for destruction mission",
+  "author": "mathkuro",
+  "version": "0.1",
+  "description": "UI for destruction mission",
+  "directive": "destructionMission",
+  "domElement": "<destruction-mission></destruction-mission>",
+  "css": {
+    "width": "96%",
+    "height": "80%",
+    "bottom": "10%",
+    "left": "2%"
+  },
+  "preserveAspectRatio": false
+}

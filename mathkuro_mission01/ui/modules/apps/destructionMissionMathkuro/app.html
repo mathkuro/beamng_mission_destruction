@@ -1,0 +1,38 @@
+<div class="destructionMission" style="font-family: 'YuMincho', 'Yu Mincho';">
+  <link type="text/css" rel="stylesheet" href="/ui/modules/apps/destructionMissionMathkuro/app.css" />
+  <div ng-controller="AppCtrl" ng-cloak>
+
+    <!-- 画面左表示 -->
+    <div>
+      <div style="max-width: 20%; margin-left: 0%; white-space: nowrap;">
+        <div ng-class="{true: 'damage-message-ja', false: 'damage-message'}[ja_jp]">
+          <!--- 被害総額 -->
+            {{ totalDamageTitle }}
+          <br>
+            {{ totalDamage }}
+          <br>
+        </div>
+      </div>
+      <br>
+      <!-- 車両毎の被害額表示テーブル -->
+      <table class="damage-table">
+        <tbody>
+          <tr ng-repeat="row in nearVehicleDamages">
+            <td>{{ row.name }}</td>
+            <td style="text-align: right;">{{ row.damage }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 画面右表示 -->
+    <div style="position:absolute;right:0%;top:0%;">
+      <!-- 被害台数表示エリア -->
+      <div ng-class="{true: 'damage-message-ja', false: 'damage-message'}[ja_jp]">
+        {{ damagedVehicleNumTitle }}
+        <br>
+        {{ damagedVehicleNum }}
+      </div>
+    </div>
+  </div>
+</div>

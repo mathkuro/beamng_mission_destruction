@@ -1,0 +1,23 @@
+.damage-message {
+    color: rgb(255, 72, 0);
+    font-family: 'Squada One', 'Open Sans Bold', 'YuMincho', 'Yu Mincho', 'Times New Roman', Times, serif;
+    font-size: 350%;
+    text-align: center;
+    text-shadow: 3px 3px black;
+}
+
+.damage-message-ja {
+    color: rgb(255, 72, 0);
+    font-family: "851ゴチカクット", "HGS創英角ｺﾞｼｯｸUB", "YuGothic", "Yu Gothic", "Hiragino Kaku Gothic Pro", "Meiryo", sans-serif;
+    font-size: 350%;
+    text-align: center;
+    text-shadow: 3px 3px black;
+}
+
+.damage-table {
+    font-family: 'MS Gothic';
+    color: #F00;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+    font-size: 200%;
+}
